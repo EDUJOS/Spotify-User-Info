@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2b2b2b;
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1ED760;
+  border-radius: 20px;
+  border: 3px solid #2b2b2b;
+}
+/* body {
+  scrollbar-width: thin;
+  scrollbar-color: #1ED760 #2b2b2b;
+} */
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* .contform {
+  width: 600px;
+} */
+
+.resinfo {
+  background-color: rgba(23, 34, 43, 0.631);
+  margin-top: 50px;
+  border-radius: 10px;
+  border-color: #1ED760;
+  display: none;
+  flex-direction: column;
+}
+
+.cont-img {
+  margin: 50px;
+  max-width: 200px;
+  max-height: 200px;
+  overflow-y: hidden;
+  clip-path: circle();
+}
+
+.cont-img img {
+  max-width: 100%;
+}
+
+.perfil {
+  display: flex;
+  /* background-color: aquamarine; */
+}
+
+.userInfo {
+  margin-top: 50px;
+  margin-left: 50px;
+  /* margin-top: 50px; */
+  width: 500px;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.userInfo p {
+  margin: 0;
+  padding: 0;
+}
+
+.playlist {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+  /* background-color: wheat; */
+}
+
+.playlist h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.cont-playlist {
+  margin-top: 15px;
+  max-height: 500px;
+  display: flex;
+  /* flex-direction: row; */
+  /* background-color: slateblue; */
+  overflow-x: scroll;
+}
+
+.card {
+  margin: 25px;
+  width: 250px;
+  min-width: 250px;
+  background-color: #181818;
+  border-radius: 6px;
+  overflow-y: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card-img {
+  margin: 25px;
+  max-width: 200px;
+  max-height: 200px;
+  /* background-color: #1ED760; */
+  border-radius: 6px;
+  overflow-y: hidden;
+}
+
+.card-img img {
+  max-width: 100%;
+}
+
+/* .play {
+  color: #1ED760;
+} */
+
+.card-info {
+  margin: 20px;
+  max-width: 100%;
+}
+
+.card-info p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  font-size: 20px;
+  color: #fff;
+}
+
+button {
+  background-color: #1ED760;
+  border-color: #1ED760;
+}
+
+#link {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #1ED760;
+  border-color: #1ED760;
+  width: 180px;
+  height: 45px;
+}
+
+.footer {
+  display: none;
+  background-color: rgba(22, 32, 41, 0.631);
+  position: relative;
+  padding: 20px 20px 30px 40px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  margin: 0px 0px 10px 0px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes a {
+  margin: 10px 20px 10px 0px;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 5px 15px 5px 15px; /**top, right, bottom, left**/
+  transition: all 0.5s ease-out;
+}
+
+.redes a:hover {
+  transform: translateX(15px);
+}
+
+.redes a span {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+svg {
+  width: 30px;
+  color: #FFFFFF;
+}
+
+.git {
+  background-color: #FFFFFF;
+  color: #2b2b2b;
+  max-width: 350px;
+  transition: all 0.5s ease-in-out;
+}
+
+.git svg {
+  color: #2b2b2b;
+}
+
+.git:hover {
+  color: #1d1d1d;
+}
+
+.ig {
+  background-color: #FFFFFF;
+  color: #2b2b2b;
+  max-width: 265px;
+}
+
+.ig svg {
+  color: #d137d6;
+}
+
+.tt {
+  background-color: #00ACEE;
+  max-width: 270px;
+}
+
+.tt span {
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .perfil {
+    flex-direction: row-reverse;
+  }
+  .cont-img {
+    display: none;
+    width: 400px;
+    clip-path: none;
+    border-radius: 15px;
+  }
+  #link {
+    margin-top: 15px;
+  }
+  .playlist {
+    margin-top: 25px;
+  }
+
+  .cont-playlist {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .card {
+    width: 250px;
+  }
+  .redes a span {
+    font-size: 12px;
+  }
+  .ig{
+    max-width: 215px;
+  }
+  .tt{
+    max-width: 215px;
+  }
+}
