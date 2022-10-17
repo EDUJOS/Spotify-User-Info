@@ -1,7 +1,7 @@
 const OPTIONS = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '6a8301279fmsh6a0e7a9ed1bd144p18afcdjsn1f308077fdd6',
+		'X-RapidAPI-Key': 'your APIKey here',
 		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
 	}
 };
@@ -45,18 +45,10 @@ $form.addEventListener('submit', async (event) => {
   $submit.setAttribute('disabled', '')
   $submit.setAttribute('aria-busy', 'true')
 
-  let separar = value.split('/')
-  let separada = separar[4]
-  let id = ''
-  if(value.length === 78 || value.length === 58){
-    id = separada.substr(0, 28)
-    // console.log(id)
-  } else if(value.length === 75 || value.length === 55) {
-    id = separada.substr(0, 25)
-    console.log(id)
-  } else if(value.length === 61 || value.length === 41){
-    id = separada.substr(0, 11)
-  }
+  let separada = value.split('/')[4]
+  console.log(separada)
+  let id = separada
+  if(separada.includes('?')) id = separada.split('?')[0]
 
   const userinfo = await fetchUser(id)
   console.log(userinfo)
