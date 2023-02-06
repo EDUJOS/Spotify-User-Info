@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/003851e9-523c-4869-8fb1-eb451fb6c924/deploy-status)](https://app.netlify.com/sites/amazing-creponne-e3933b/deploys)
+![Netlify Status](https://api.netlify.com/api/v1/badges/003851e9-523c-4869-8fb1-eb451fb6c924/deploy-status)
 # Spotify User Info with Api
 ## Contenido
 - [Spotify User Info with Api](#spotify-user-info-with-api)
