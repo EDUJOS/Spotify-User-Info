@@ -1,12 +1,15 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/003851e9-523c-4869-8fb1-eb451fb6c924/deploy-status)](https://app.netlify.com/sites/amazing-creponne-e3933b/deploys)
 # Spotify User Info with Api
 ## Contenido
-* [Descripción](#spotify-user-info-with-api)
-* [Herramientas](#herramientas)
-* [Instalación](#instalación)
-* [Credenciales](#credenciales)
-* [Configuración](#configuración)
-* [Desplegar app](#desplegar-app)
-* [Social Media](#social-media)
+- [Spotify User Info with Api](#spotify-user-info-with-api)
+	- [Contenido](#contenido)
+	- [Descripción](#descripción)
+	- [Herramientas](#herramientas)
+	- [Instalación](#instalación)
+	- [Credenciales](#credenciales)
+	- [Configuración](#configuración)
+	- [Desplegar App](#desplegar-app)
+- [Social Media](#social-media)
 
 ## Descripción
 Esta práctica está realizada con el fín de aprender a obtener y manejar datos de una Api haciendo el uso del lenguaje **JavaScript**. Con respecto al diseño web pues es meramente **HTML** y **CSS** básico, bajo el apoyo del Framework [PicoCss](https://picocss.com/) para evitar estilar, ya que la parte que nos interesa es el manejo de datos de la Api de Spotify.
