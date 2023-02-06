@@ -1,7 +1,7 @@
 const OPTIONS = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'your APIKey here',
+		'X-RapidAPI-Key': 'Your RapidApi_key',
 		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
 	}
 };
@@ -73,7 +73,9 @@ $form.addEventListener('submit', async (event) => {
       playlistUri = playlist.uri.split(':')[2]
       console.log(playlistUri)
       playlistId = playlistUri
-      playlistUrl = `https://open.spotify.com/playlist/${playlistId}`
+      playlistUrl = `https://open.spotify.com/playlist/${playlistUri}`
+      let uugg = `<a class="play" target="_blank" href="${playlistUrl}">`
+      console.log(playlistUrl)
       const Data = await fetchPlaylist(playlistId)
       playlistData = Data
       tracks = Data.tracks.items.length
@@ -83,9 +85,9 @@ $form.addEventListener('submit', async (event) => {
           frontPlaylistData += `
           <div class="card">
           <div class="card-img">
-          <a class="play" target="_blank" href="${playlistUrl}">
-            <img id="playimg" src="${playlistData.images[0].url}">
-          </a>
+            ${uugg}
+              <img id="playimg" src="${playlistData.images[0].url}">
+            </a>
             </div>
             <div class="card-info">
             <p id="title">${playlistData.name}</p>
